@@ -28,7 +28,7 @@ dvc init
 git commit -m "Iniciando prroyecto MLOps"
 
 ```
-Podemos crear el árbol de carpetas de nuestro experimento y el .gitignore
+Podemos crear el árbol de carpetas de nuestro experimento (EJEMPLO DE COMO SE VE EN LINUX)
 ````
 diabetes_mlops_masterclass/
 
@@ -42,6 +42,31 @@ diabetes_mlops_masterclass/
 ├
 ├
 └── README.md            # Documentación general del proyecto
+````
+ Creamos nuestro fichero .gitignore "colgando" de la carpeta raiz
+
+````
+# Entornos virtuales
+venv/
+.mlops/
+
+# Cachés de Python
+pycache/
+*.py[cod]
+
+# Datos y Modelos (serán gestionados por DVC)
+data/*
+models/.pkl
+models/.joblib
+
+# MLflow local
+mlruns/
+mlartifacts/
+
+# Secretos
+.env
+/model.pkl
+
 ````
 
 Configuración de repositorio remoto (en este caso lo hacemos local)
