@@ -175,8 +175,8 @@ stages:
     cmd: python src/load_data.py
     deps:
       - src/load_data.py
-    outs:
-      - data/raw/diabetes.csv
+  #  outs: - No añadimos salida porque ya lo incluimos en el anterior fichero
+    #  - data/raw/diabetes.csv
   train:
     cmd: python src/train.py
     deps:
