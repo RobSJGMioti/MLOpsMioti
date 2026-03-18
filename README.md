@@ -202,7 +202,7 @@ Para iniciar el servidor local con soporte para registro de modelos:
 ```
 mlflow server \
     --backend-store-uri sqlite:///mlflow.db \
-    --default-artifact-root./mlartifacts \
+    --default-artifact-root ./mlartifacts \
     --host 0.0.0.0 \
     --port 5000
 ```
